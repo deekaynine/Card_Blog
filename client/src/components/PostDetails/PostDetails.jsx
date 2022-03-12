@@ -96,14 +96,22 @@ const Post = () => {
                   className={classes.card2}
                   style={{
                     borderRadius: "20px",
-                    padding: "10px",
+                    padding: "15px",
                     margin: "20px",
                     cursor: "pointer",
                   }}
                   onClick={() => openPost(_id)}
                   key={_id}
                 >
-                  <Typography gutterBottom variant="h6">
+                  <Typography
+                    gutterBottom
+                    variant="h6"
+                    color="primary"
+                    style={{
+                      borderRadius: "10px",
+                      padding: "10px",
+                    }}
+                  >
                     {title}
                   </Typography>
                   <Typography gutterBottom variant="subtitle2">
